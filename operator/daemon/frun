@@ -1,0 +1,6 @@
+// Daemon
+
+gcc main.c -o main
+
+./main &
+ps ax -o comm,pid,pgid,sid,tty | grep main
